@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <head>
+        <nav class="navbar topo navbar-light bg-light justify-content-between">
+            <a class="navbar-brand">Mercearia do Batata</a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Digite sua Busca..." aria-label="Search">
+                <button class="btn  my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </nav>
+        <div id="menu">
+
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Produtos</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Perecíveis</a>
+                        <a class="dropdown-item" href="#">Não-perecíveis</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+        <div id="baixomenu"></div>
+
+    </head>
+    <main>
+        <div class="jumbotron text-center">
+            <h1>My First Bootstrap Page</h1>
+            <p>Resize this responsive page to see the effect!</p>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <form action="#">
+                    <div class="form-group">
+                        <label>Nome:</label>
+                        <input type="text" class="form-control" placeholder="Digite seu nome">
+
+                        <label>Email:</label>
+                        <input type="mail" class="form-control" placeholder="Digite seu email">
+
+                        <label>Telefone:</label>
+                        <input type="tel" class="form-control" placeholder="(00) 0000-0000">
+                        
+                        <label>Data de Nascimento:</label>
+                        <input type="date" class="form-control">
+
+                        <label>Estado/Cidade:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                </form>
+                <div class="col-sm-4">
+                    <h3>Galeria de Fotos</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Column 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
