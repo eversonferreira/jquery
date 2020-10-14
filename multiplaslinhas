@@ -1,0 +1,43 @@
+<h3>Mídias</h3>
+  <table class="table table-bordered" id="dynamicAddRemove">  
+<tr>
+<th>Sequencia</th>
+<th>Descricao</th>
+<th>Url Externa</th>
+<th>Opçoes</th>
+</tr>
+<tr>  
+<td><input type="text" name="midias[0][sequencia]" placeholder="Sequencia" class="form-control" /></td>  
+<td><input type="text" name="midias[0][descricao]" placeholder="Descrição" class="form-control" /></td> 
+<td><input type="text" name="midias[0][url]" placeholder="URL Externa"  class="form-control" /></td> 
+ 
+<td><button type="button" name="add" id="add-btn" class="btn btn-success">Nova Linha</button></td>  
+</tr>  
+</table> 
+
+
+
+
+<script type="text/javascript">
+/* Adicionar e remover colunas de mídias*/
+/*Script tem por objetico adicionar novos campos para que seja possível adiconar 
+quantas midias foram necessarias*/
+var i = 0;
+
+$("#add-btn").click(function(){
+++i;
+
+$("#dynamicAddRemove").append(`<tr>
+                              <td><input type="text" name="midias[${i}][sequencia]" placeholder="Sequencia"  class="form-control" /></td>
+                              <td><input type="text" name="midias[${i}][descricao]" placeholder="Descrição"  class="form-control" /></td>
+                              <td><input type="text" name="midias[${i}][url]" placeholder="URL Externa" class="form-control" /></td>
+                              <td><button type="button" class="btn btn-danger remove-tr">Remover</button></td>
+                              </tr>`);
+
+                            
+});
+$(document).on('click', '.remove-tr', function(){  
+$(this).parents('tr').remove();
+});  
+/* Fim adicionar remover colunas de midias*/
+</script>
