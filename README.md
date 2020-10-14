@@ -1,2 +1,2 @@
 # jquery
-Trabalho Jquery
+Jquery
